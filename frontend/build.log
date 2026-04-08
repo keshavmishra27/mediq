@@ -1,0 +1,198 @@
+
+> hospital-frontend@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 11 errors:
+./app/book/page.tsx:1:1
+Module not found: Can't resolve '@/components/BookingForm'
+> 1 | import BookingForm from "@/components/BookingForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function BookPage() {
+  4 |   return (
+
+Import map: aliased to relative './src/components/BookingForm' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/doctors/page.tsx:1:1
+Module not found: Can't resolve '@/components/DoctorCard'
+> 1 | import DoctorCard from "@/components/DoctorCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { doctors } from "@/lib/data";
+  3 |
+  4 | export default function DoctorsPage() {
+
+Import map: aliased to relative './src/components/DoctorCard' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/layout.tsx:6:1
+Module not found: Can't resolve '@/components/Footer'
+  4 | import { ThemeProvider } from "@/components/ThemeProvider";
+  5 | import Navbar from "@/components/Navbar";
+> 6 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+  9 |
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/HeroSlider'
+> 1 | import HeroSlider from "@/components/HeroSlider";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import ServicesGrid from "@/components/ServicesGrid";
+  3 | import Testimonials from "@/components/Testimonials";
+  4 | import MapSection from "@/components/MapSection";
+
+Import map: aliased to relative './src/components/HeroSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/page.tsx:4:1
+Module not found: Can't resolve '@/components/MapSection'
+  2 | import ServicesGrid from "@/components/ServicesGrid";
+  3 | import Testimonials from "@/components/Testimonials";
+> 4 | import MapSection from "@/components/MapSection";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/MapSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/Navbar'
+  3 | import "./globals.css";
+  4 | import { ThemeProvider } from "@/components/ThemeProvider";
+> 5 | import Navbar from "@/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Footer from "@/components/Footer";
+  7 |
+  8 | const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/ServicesGrid'
+  1 | import HeroSlider from "@/components/HeroSlider";
+> 2 | import ServicesGrid from "@/components/ServicesGrid";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Testimonials from "@/components/Testimonials";
+  4 | import MapSection from "@/components/MapSection";
+  5 |
+
+Import map: aliased to relative './src/components/ServicesGrid' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/Testimonials'
+  1 | import HeroSlider from "@/components/HeroSlider";
+  2 | import ServicesGrid from "@/components/ServicesGrid";
+> 3 | import Testimonials from "@/components/Testimonials";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import MapSection from "@/components/MapSection";
+  5 |
+  6 | export default function Home() {
+
+Import map: aliased to relative './src/components/Testimonials' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/layout.tsx:4:1
+Module not found: Can't resolve '@/components/ThemeProvider'
+  2 | import { Inter } from "next/font/google";
+  3 | import "./globals.css";
+> 4 | import { ThemeProvider } from "@/components/ThemeProvider";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Navbar from "@/components/Navbar";
+  6 | import Footer from "@/components/Footer";
+  7 |
+
+Import map: aliased to relative './src/components/ThemeProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/doctors/page.tsx:2:1
+Module not found: Can't resolve '@/lib/data'
+  1 | import DoctorCard from "@/components/DoctorCard";
+> 2 | import { doctors } from "@/lib/data";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function DoctorsPage() {
+  5 |   return (
+
+Import map: aliased to relative './src/lib/data' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/hospitals/page.tsx:1:1
+Module not found: Can't resolve '@/lib/data'
+> 1 | import { hospitals } from "@/lib/data";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { Search, MapPin, Phone, Clock } from "lucide-react";
+  3 | import Image from "next/image";
+  4 |
+
+Import map: aliased to relative './src/lib/data' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./app/book/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/doctors/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/layout.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/page.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/layout.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/layout.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/doctors/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/hospitals/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

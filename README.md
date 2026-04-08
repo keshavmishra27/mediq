@@ -57,3 +57,27 @@ Open docs at `http://localhost:8000/docs`.
 - WebSocket: `/ws/chat/{appointment_id}`
 
 # mediq
+
+Production-ready hospital management platform with a FastAPI backend and a Next.js frontend.
+
+## Components
+
+### 1) Backend (FastAPI)
+Located in the root directory. Follow the instructions above to get started.
+
+### 2) Frontend (Next.js)
+Located in the `/frontend` directory.
+
+**Features:**
+- Premium UI inspired by Apollo Hospitals.
+- 4-step Appointment Booking Wizard.
+- Responsive design with Dark Mode support.
+- Built with Next.js, Tailwind CSS, and Framer Motion.
+
+**Quick Start:**
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+Open `http://localhost:3000` to view the frontend.
